@@ -158,11 +158,14 @@ body {
 /* ================================
    HERO SECTION
 ================================ */
+/* ================================
+   HERO SECTION BASE STYLES
+================================ */
 .hero-section {
   background-color: var(--hero-background-color);
   padding: 80px 20px;
   position: relative;
-  margin: 50px !important; 
+  margin: 50px !important;
   z-index: 3;
 }
 
@@ -191,7 +194,7 @@ body {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   border-radius: 2px;
-  font-size: clamp(0.7rem, 2vw, 1rem); /* ✅ responsive font-size */
+  font-size: clamp(0.7rem, 2vw, 1rem);
   margin-top: 1rem;
 }
 
@@ -199,7 +202,7 @@ body {
 .custom-btn .icon-part {
   background: rgba(200, 22, 22, 1);
   color: #fff;
-  padding: clamp(0.5rem, 1vw, 0.8rem) clamp(0.8rem, 2vw, 1rem);
+padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -234,7 +237,7 @@ body {
 .product-img {
   width: 60%;
   height: auto;
-  position: absolute;   /* ✅ desktop par bahar */
+  position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -249,6 +252,7 @@ body {
   font-weight: 700;
   text-align: center;
 }
+
 .product-desc {
   font-size: clamp(0.9rem, 2.5vw, 1.1rem);
   margin-top: 20px;
@@ -260,63 +264,27 @@ body {
    MEDIA QUERIES
 ================================ */
 
-/* Tablet & Desktop text alignment */
-@media (min-width: 768px) {
-  .product-title,
-  .product-desc {
-    text-align: end;
-  }
-  .custom-btn {
-    font-size: 0.9rem;
-  }
-}
-
-@media (min-width: 577px) and (max-width: 991px) {
-  .custom-btn {
-    width: auto !important;
-    font-size: 0.85rem !important; /* thoda bada text */
-    margin: 15px auto !important;
-  }
-
-  .custom-btn .icon-part {
-    padding: 0.8rem 0.7rem !important; 
-  }
-
-  .custom-btn .text-part {
-    padding: 0.5rem 1rem !important; 
-    font-size: 0.85rem !important;
-  }
-
-    .product-img {
-    width: 80%;
-    max-width: 400px;
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    margin: 20px auto;
-  }
-}
-
-
-/* Small screens */
+/* -------------------
+   Mobile First (<576px)
+------------------- */
 @media (max-width: 576px) {
   .hero-section {
     margin: 20px 0;
     padding: 40px 15px;
   }
+
   .hero-text {
     border-left: 6px solid rgba(200, 22, 22, 1);
-    padding-left:5px !important;
-    margin:0px !important;
-    font-size:20px;
+    padding-left: 5px !important;
+    margin: 0 !important;
+    font-size: 20px;
   }
 
-   .product-img {
+  .product-img {
     width: 100%;
     max-width: 300px;
     display: block;
-    margin: 15px auto; 
+    margin: 15px auto;
     position: relative;
     top: 0;
     left: 0;
@@ -324,23 +292,156 @@ body {
   }
 
   br {
-    display:none !important;
+    display: none !important;
   }
+
   .custom-btn {
-    width: auto !important; 
+    width: auto !important;
     font-size: 0.75rem !important;
     margin: 20px auto !important;
   }
 
   .custom-btn .icon-part {
-    padding: 0.7rem 0.6rem !important; 
+    padding: 0.7rem 0.6rem !important;
   }
 
   .custom-btn .text-part {
-    padding: 0.4rem 0.8rem !important; 
+    padding: 0.4rem 0.8rem !important;
     font-size: 0.75rem !important;
   }
 }
+
+/* -------------------
+   Tablet (577px – 991px)
+------------------- */
+@media (min-width: 577px) and (max-width: 991px) {
+  .custom-btn {
+    font-size: 0.85rem !important;
+    margin: 15px auto !important;
+  }
+
+  .custom-btn .icon-part {
+    padding: 0.8rem 0.7rem !important;
+  }
+
+  .custom-btn .text-part {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  .product-img {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+}
+
+/* -------------------
+   Desktop (992px – 1199px)
+------------------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-section {
+    margin: 40px !important;
+    padding: 80px 40px;
+  }
+  .product-title,
+  .product-desc {
+    text-align: end;
+  }
+
+  .custom-btn {
+    font-size: 0.9rem;
+  }
+  .custom-btn .icon-part {
+    padding: 0.9rem 0.8rem !important;
+  }
+
+  .custom-btn .text-part {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
+  }
+
+  .product-img {
+    width: 60%;
+    max-width: 450px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero-text {
+    border-left: 15px solid rgba(200, 22, 22, 1);
+    padding-left: 5px !important;
+    margin: 0 !important;
+    font-size: 30px;
+  }
+
+  .product-title {
+    font-size: clamp(1.8rem, 3.3vw, 3.5rem);
+  }
+  .product-desc {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-top: 25px;
+    text-align: right;
+  }
+
+  br {
+    display: none !important;
+  }
+}
+
+/* -------------------
+   Extra Large (≥1200px)
+------------------- */
+/* @media (min-width: 1200px) {
+  .hero-section {
+    margin: 80px auto !important;
+    padding: 120px 60px;
+  }
+
+  .hero-text {
+    font-size: clamp(2.2rem, 2.5vw, 3.2rem);
+    padding-left: 18px;
+    border-left: 12px solid rgba(200, 22, 22, 1);
+  }
+
+  .product-img {
+    width: 50%;
+    max-width: 550px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .product-title {
+    font-size: clamp(2.2rem, 3vw, 4rem);
+    text-align: end;
+  }
+
+  .product-desc {
+    font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+    margin-top: 30px;
+    text-align: end;
+  }
+
+  .custom-btn {
+    font-size: 1.1rem !important;
+    margin: 25px 0 !important;
+  }
+
+  .custom-btn .icon-part {
+    padding: 1.1rem 1rem !important;
+  }
+
+  .custom-btn .text-part {
+    padding: 0.7rem 1.4rem !important;
+    font-size: 1.1rem !important;
+  }
+} */
 
 
 /* ====================About starts here=============== */
@@ -410,26 +511,55 @@ body {
   line-height: 1.6;
 }
 
-.about-btn {
+/* ================================
+   CTA BUTTON
+================================ */
+.custom-btn {
   display: inline-flex;
   align-items: center;
-  background-color: #d50000;
-  color: #fff;
-  font-weight: 600;
-  padding: 10px 25px;
-  border: 2px solid #d50000;
+  justify-content: center;
+  border: 2px solid rgba(200, 22, 22, 1);
+  background: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: all 0.3s ease-in-out;
+  border-radius: 2px;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  margin-top: 1rem;
 }
 
-.about-btn:hover {
-  background-color: transparent;
-  color: #d50000;
+/* Left part (icon) */
+.custom-btn .icon-part {
+  background: rgba(200, 22, 22, 1);
+  color: #fff;
+ padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.about-btn i {
-  margin-right: 8px;
-  font-size: 1rem;
+/* Right part (text) */
+.custom-btn .text-part {
+  padding: clamp(0.5rem, 1vw, 0.8rem) clamp(0.9rem, 2vw, 1.2rem);
+  color: #000;
+  background: #fff;
+  white-space: nowrap;
+}
+
+/* Hover effect */
+.custom-btn:hover {
+  background: rgba(200, 22, 22, 1);
+  color: #fff !important;
+}
+
+.custom-btn:hover .text-part {
+  color: #fff;
+  background: rgba(200, 22, 22, 1);
+}
+
+.custom-btn:hover .icon-part {
+  background: #000;
 }
 
 @media (max-width: 576px) {
@@ -450,6 +580,7 @@ body {
   padding: 70px 0;
 }
 
+/* Video */
 .video-container video {
   width: 100%;
   height: auto;
@@ -458,12 +589,14 @@ body {
   display: block;
 }
 
-/* Marquee text */
+/* Marquee */
 .marquee-wrapper {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  height: 200px;
+  height: 120px; /* default for desktops */
+  display: flex;
+  align-items: center;
 }
 
 .marquee-text {
@@ -479,18 +612,16 @@ body {
     transform: translateX(0%);
     opacity: 1;
   }
-
   90% {
     opacity: 1;
   }
-
   100% {
     transform: translateX(-100%);
     opacity: 0;
   }
 }
 
-/* List styles */
+/* Info List */
 .info-list {
   list-style: none;
   padding: 0;
@@ -510,81 +641,156 @@ body {
   margin-right: 0.5rem;
 }
 
-/* Button style */
-/* .custom-btn {
+/* CTA Button */
+.custom-btn {
   display: inline-flex;
   align-items: center;
-  background: white;
-  border: 2px solid #C81616;
+  justify-content: center;
+  border: 2px solid rgba(200, 22, 22, 1);
+  background: #fff;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 0;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border-radius: 2px;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  margin-top: 1rem;
 }
 
 .custom-btn .icon-part {
-  background: #C81616;
-  color: white;
-  padding: 1.2rem !important;
+  background: rgba(200, 22, 22, 1);
+  color: #fff;
+  padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.video-main .custom-btn .text-part {
-  padding: 0.8rem 1rem;
-  color: black;
-  font-size: 18px;
+.custom-btn .text-part {
+  padding: clamp(0.5rem, 1vw, 0.8rem) clamp(0.9rem, 2vw, 1.2rem);
+  color: #000;
+  background: #fff;
+  white-space: nowrap;
 }
 
 .custom-btn:hover {
-  text-decoration: none;
-  opacity: 0.9;
-  color: #C81616;
-} */
+  background: rgba(200, 22, 22, 1);
+  color: #fff !important;
+}
+.custom-btn:hover .text-part {
+  color: #fff;
+  background: rgba(200, 22, 22, 1);
+}
+.custom-btn:hover .icon-part {
+  background: #000;
+}
 
-/* Responsive */
-@media (max-width: 767px) {
+/* ==============================
+   RESPONSIVE BREAKPOINTS
+============================== */
+
+/* Extra Large (≥1200px) */
+@media (min-width: 1200px) {
   .marquee-text {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
-
-  .marquee-wrapper {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    height: 80px;
+  .info-list li {
+    font-size: 1.2rem;
   }
+}
 
+/* Large (992px–1199px) */
+@media (max-width: 1199px) {
+  .video-main {
+    padding: 60px 0;
+  }
+  .marquee-text {
+    font-size: 2rem;
+  }
+}
+
+/* Medium (768px–991px) */
+@media (max-width: 991px) {
+  .video-main {
+    padding: 50px 0;
+  }
+  .marquee-text {
+    font-size: 1.7rem;
+  }
   .info-list li {
     font-size: 1rem;
   }
 }
 
-/* our offering section here */
+/* Small (576px–767px) */
+@media (max-width: 767px) {
+  .video-main {
+    padding: 40px 0;
+  }
+  .video-container {
+    margin-bottom: 20px; /* stack video and content */
+  }
+  .marquee-wrapper {
+    height: 80px;
+  }
+  .marquee-text {
+    font-size: 1.4rem;
+  }
+  .info-list {
+    margin: 1.5rem 0;
+  }
+  .info-list li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra Small (<576px) */
+@media (max-width: 575px) {
+  .marquee-wrapper {
+    height: 60px;
+  }
+  .marquee-text {
+    font-size: 1.2rem;
+  }
+  .info-list li {
+    font-size: 0.9rem;
+  }
+  .custom-btn {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* ==========our offering section here================= */
 /* Section headings */
+/* ================================
+   Section Headings
+================================ */
 .section-subtitle {
   color: red;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
   letter-spacing: 1px;
 }
 
 .section-title {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: clamp(1.3rem, 4vw, 2rem);
 }
 
 .section-description {
   max-width: 700px;
   margin: auto;
-  font-size: 0.95rem;
+  font-size: clamp(0.8rem, 2vw, 0.95rem);
   color: #333;
+  line-height: 1.6;
 }
 
-/* Card styles */
+/* ================================
+   Card Styles
+================================ */
 .product-card {
   border: none;
   transition: transform 0.3s ease;
@@ -611,6 +817,7 @@ body {
   justify-content: space-between;
   font-weight: bold;
   text-transform: uppercase;
+  position: relative;
 }
 
 .product-info i {
@@ -620,64 +827,135 @@ body {
   font-size: 1rem;
   position: absolute;
   bottom: 27px;
-  ;
   right: 30px;
 }
 
-/* Button */
+/* ================================
+   CTA Button
+================================ */
 .custom-btn {
   display: inline-flex;
   align-items: center;
-  background: white;
+  justify-content: center;
   border: 2px solid rgba(200, 22, 22, 1);
+  background: #fff;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 1.5rem;
-  text-decoration: none;
-}
-
-.custom-btn .icon-part {
-  background: rgba(200, 22, 22, 1);
-  color: white;
-  padding: 0.8rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.custom-btn .icon-part:hover {
-  background: rgba(200, 22, 22, 1);
-  color: white !important;
-  padding: 0.8rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.custom-btn .text-part {
-  padding: 0.8rem 1.2rem;
-  color: black;
-}
-
-.custom-btn .icon-part:hover~.text-part {
-  color: #fff;
-}
-
-.custom-btn .text-part:hover {
-  padding: 0.8rem 1rem;
-  color: rgb(255, 255, 255);
-}
-
-.custom-btn:hover {
-  opacity: 0.9;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  background-color: rgba(200, 22, 22, 1);
-  color: white !important;
+  border-radius: 2px;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  margin-top: 1rem;
 }
+
+/* Left part (icon) */
+.custom-btn .icon-part {
+  background: rgba(200, 22, 22, 1);
+  color: #fff;
+  padding: clamp(0.5rem, 2.5vw, 1rem) clamp(0.7rem, 2vw, 1rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Right part (text) */
+.custom-btn .text-part {
+  padding: clamp(0.4rem, 1vw, 0.8rem) clamp(0.8rem, 2vw, 1.2rem);
+  color: #000;
+  background: #fff;
+  white-space: nowrap;
+}
+
+/* Hover effect */
+.custom-btn:hover {
+  background: rgba(200, 22, 22, 1);
+  color: #fff !important;
+}
+
+.custom-btn:hover .text-part {
+  color: #fff;
+  background: rgba(200, 22, 22, 1);
+}
+
+.custom-btn:hover .icon-part {
+  background: #000;
+}
+
+/* ================================
+   Responsive Tweaks
+================================ */
+
+/* Small screens (mobile ≤576px) */
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .product-info i {
+    bottom: 30px;
+    right: 20px;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .custom-btn {
+    font-size: 0.75rem;
+    margin: 15px auto;
+  }
+
+  .custom-btn .icon-part {
+    padding: 0.6rem 0.5rem;
+  }
+
+  .custom-btn .text-part {
+    padding: 0.4rem 0.7rem;
+  }
+}
+
+/* Tablet screens (577px – 991px) */
+@media (min-width: 577px) and (max-width: 991px) {
+  .product-info span{
+    font-size: 0.9rem;
+  }
+  
+  .product-info i {
+    bottom: 23px;
+    right: 10px;
+    padding: 0.7rem;
+  }
+
+  .custom-btn {
+    font-size: 0.85rem;
+    margin: 15px auto;
+  }
+
+  .custom-btn .icon-part {
+    padding: 0.8rem 0.7rem;
+  }
+
+  .custom-btn .text-part {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Large screens (992px – 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .custom-btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra-large screens (≥1200px) */
+@media (min-width: 1200px) {
+  .custom-btn {
+    font-size: 1rem;
+  }
+}
+
 
 /* =============faq section starts here================ */
 
+/* ==================== FAQ Section ==================== */
 .faq-section {
   padding: 60px 0;
 }
@@ -693,18 +971,23 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   font-size: 2rem;
+  margin: 10px 0;
 }
 
 .faq-description {
   color: #555;
   margin-bottom: 30px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-/* ====================FAQ Items================ */
+/* ==================== FAQ Items ==================== */
 .faq-item {
   display: flex;
   border: 1px solid #ddd;
   margin-bottom: 15px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .faq-number {
@@ -734,6 +1017,7 @@ body {
 
 .faq-question {
   font-weight: 500;
+  font-size: 1rem;
 }
 
 .faq-toggle {
@@ -741,6 +1025,7 @@ body {
   color: white;
   font-size: 1.2rem;
   padding: 6px 10px;
+  border-radius: 4px;
 }
 
 .faq-answer {
@@ -759,26 +1044,103 @@ body {
 }
 
 .faq-item.active .faq-toggle i::before {
-  content: "\f068";
-  /* minus icon */
+  content: "\f068"; /* FontAwesome minus icon */
 }
 
+/* ==================== Responsive ==================== */
 
-/* =============Responsive adjustments============= */
-@media (max-width: 768px) {
+/* Mobile First */
+@media (max-width: 576px) {
+  .faq-title {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .faq-description {
+    font-size: 0.9rem;
+    text-align: left;
+  }
   .faq-item {
     flex-direction: row;
   }
-
   .faq-number {
-    min-width: 40px;
-    font-size: 0.9rem;
+    min-width: 35px;
+    font-size: 0.85rem;
+    padding: 8px;
   }
-
   .faq-question {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+  }
+  .faq-toggle {
+    font-size: 1rem;
+    padding: 4px 8px;
+  }
+  .faq-section img {
+    width: 100% !important;
+    margin-top: 20px;
   }
 }
+
+/* Tablets (Portrait) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .faq-subtitle{
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .faq-title {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .faq-description {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  .faq-question {
+    font-size: 0.95rem;
+  }
+  .faq-section img {
+    width: 80% !important;
+    margin-top: 20px;
+  }
+}
+
+/* Tablets (Landscape) + Small Laptops */
+@media (min-width: 769px) and (max-width: 991px) {
+  .faq-title {
+    font-size: 1.9rem;
+  }
+  .faq-description {
+    font-size: 1rem;
+  }
+  .faq-section img {
+    width: 100% !important;
+    margin-top: 20px;
+  }
+}
+
+/* Medium Desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .faq-title {
+    font-size: 2rem;
+  }
+  .faq-section img {
+    width: 70%;
+  }
+}
+
+/* Large Desktops (1200px and above) */
+@media (min-width: 1200px) {
+  .faq-title {
+    font-size: 2.2rem;
+  }
+  .faq-description {
+    font-size: 1.05rem;
+  }
+  .faq-section img {
+    width: 65% !important;
+  }
+}
+
+
 
 
 
@@ -964,31 +1326,55 @@ body {
 
 }
 
-.connect-btn {
+/* ================================
+   CTA BUTTON
+================================ */
+.custom-btn {
   display: inline-flex;
   align-items: center;
-  background: #fff;
+  justify-content: center;
   border: 2px solid rgba(200, 22, 22, 1);
-  padding: 10px 25px;
-  font-weight: 600;
-  color: #000;
+  background: #fff;
+  font-weight: bold;
   text-transform: uppercase;
-  transition: 0.3s;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border-radius: 2px;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  margin-top: 1rem;
 }
 
-.connect-btn span {
-  margin-right: 10px;
-  background: #c00;
-  padding: 12px 15px;
+/* Left part (icon) */
+.custom-btn .icon-part {
+  background: rgba(200, 22, 22, 1);
   color: #fff;
+padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.connect-btn:hover {
-  background: #c00 !important;
+/* Right part (text) */
+.custom-btn .text-part {
+  padding: clamp(0.5rem, 1vw, 0.8rem) clamp(0.9rem, 2vw, 1.2rem);
+  color: #000;
+  background: #fff;
+  white-space: nowrap;
+}
+
+/* Hover effect */
+.custom-btn:hover {
+  background: rgba(200, 22, 22, 1);
   color: #fff !important;
+}
+
+.custom-btn:hover .text-part {
+  color: #fff;
+  background: rgba(200, 22, 22, 1);
+}
+
+.custom-btn:hover .icon-part {
+  background: #000;
 }
 
 .footer-links h6 {
@@ -1108,13 +1494,13 @@ body {
     font-size: 24px !important;
   }
 
-  .our-story{
+  .our-story {
     text-align: left !important;
   }
 
   .our-story p {
     font-size: 15.5px !important;
-    padding:0px;
+    padding: 0px;
   }
 }
 
@@ -1281,12 +1667,13 @@ body {
     font-size: 24px;
     text-align: left;
   }
+
   .timeline-section h6 {
     font-size: 14px;
     text-align: left;
   }
 
-  .timeline-image img{
+  .timeline-image img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -1440,7 +1827,7 @@ body {
     text-align: left;
   }
 
-  .parent-company h6{
+  .parent-company h6 {
     text-align: left;
   }
 
@@ -1500,6 +1887,7 @@ body {
   .blade-box {
     padding: 40px 15px;
   }
+
   .blade-hole-head {
     margin-bottom: 20px !important;
   }
