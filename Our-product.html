@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pujari Agro</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--============== Navbar start here===========================-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="images/Logo.png" alt="Logo">
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Center Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="text black">Home</span>
+              <span class="text red">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="text black">About Us</span>
+              <span class="text red">About Us</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="text black">Our Products</span>
+              <span class="text red">Our Products</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="text black">Contact Us</span>
+              <span class="text red">Contact Us</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Phone -->
+        <div class="phone-box d-none d-lg-flex">
+          <div class="phone-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="phone-number">+91 91190 06999</div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <!-- ==============Navbar end here=====================-->
+
+    <!-- Tab section here -->
+    <!-- OUR COLLECTION SECTION -->
+    <section class="our-collection py-5">
+        <div class="container">
+            <!-- Section Heading -->
+            <div class="text-center mb-4">
+                <p class="text-danger fw-bold small text-uppercase ">Our Collection</p>
+                <h2 class="fw-bold mb-3">VIEW ALL PRODUCTS</h2>
+
+                <!-- Tab Buttons -->
+                <ul class="nav justify-content-center flex-wrap mb-4" id="productTabs" role="tablist">
+                    <li class="nav-item-tick" role="presentation">
+                        <button class="nav-link active btn btn-dark me-2 mb-2" id="all-tab" data-bs-toggle="tab"
+                            data-bs-target="#all" type="button" role="tab">All</button>
+                    </li>
+                    <li class="nav-item-tick" role="presentation">
+                        <button class="nav-link btn btn-outline-dark me-2 mb-2" id="cat1-tab" data-bs-toggle="tab"
+                            data-bs-target="#cat1" type="button" role="tab">Category One</button>
+                    </li>
+                    <li class="nav-item-tick" role="presentation">
+                        <button class="nav-link btn btn-outline-dark me-2 mb-2" id="cat2-tab" data-bs-toggle="tab"
+                            data-bs-target="#cat2" type="button" role="tab">Category Two</button>
+                    </li>
+                    <li class="nav-item-tick" role="presentation">
+                        <button class="nav-link btn btn-outline-dark mb-2" id="cat3-tab" data-bs-toggle="tab"
+                            data-bs-target="#cat3" type="button" role="tab">Category Three</button>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="mb-5">
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="productTabsContent">
+
+                <!-- ALL PRODUCTS -->
+                <div class="tab-pane fade show active" id="all" role="tabpanel">
+                    <div class="row align-items-center card-content-new mb-5">
+                        <!-- Product Image -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="product-img-box text-center">
+                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
+                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
+                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
+                                farmers alike.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Material:</strong> High Carbon Steel</li>
+                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
+                                    vibration-free operation</li>
+                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                            </ul>
+                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <a href="#" class="quote-btn">
+                                <div class="icon-box">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <span>Get a Quote</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row align-items-center card-content-new mb-5">
+                        <!-- Product Image -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="product-img-box text-center">
+                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
+                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
+                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
+                                farmers alike.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Material:</strong> High Carbon Steel</li>
+                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
+                                    vibration-free operation</li>
+                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                            </ul>
+                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <a href="#" class="quote-btn">
+                                <div class="icon-box">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <span>Get a Quote</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center card-content-new mb-5">
+                        <!-- Product Image -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="product-img-box text-center">
+                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
+                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
+                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
+                                farmers alike.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Material:</strong> High Carbon Steel</li>
+                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
+                                    vibration-free operation</li>
+                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                            </ul>
+                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <a href="#" class="quote-btn">
+                                <div class="icon-box">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <span>Get a Quote</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center card-content-new ">
+                        <!-- Product Image -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="product-img-box text-center">
+                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
+                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
+                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
+                                farmers alike.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Material:</strong> High Carbon Steel</li>
+                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
+                                    vibration-free operation</li>
+                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                            </ul>
+                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <a href="#" class="quote-btn">
+                                <div class="icon-box">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <span>Get a Quote</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CATEGORY ONE -->
+                <div class="tab-pane fade" id="cat1" role="tabpanel">
+                    <div class="row align-items-center card-content-new mb-5">
+                        <!-- Product Image -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="product-img-box text-center">
+                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
+                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
+                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
+                                farmers alike.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Material:</strong> High Carbon Steel</li>
+                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
+                                    vibration-free operation</li>
+                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                            </ul>
+                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <a href="#" class="quote-btn">
+                                <div class="icon-box">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <span>Get a Quote</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row align-items-center card-content-new mb-5">
+                        <!-- Product Image -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="product-img-box text-center">
+                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
+                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
+                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
+                                farmers alike.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Material:</strong> High Carbon Steel</li>
+                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
+                                    vibration-free operation</li>
+                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                            </ul>
+                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <a href="#" class="quote-btn">
+                                <div class="icon-box">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <span>Get a Quote</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center card-content-new mb-5">
+                        <!-- Product Image -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="product-img-box text-center">
+                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
+                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
+                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
+                                farmers alike.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Material:</strong> High Carbon Steel</li>
+                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
+                                    vibration-free operation</li>
+                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                            </ul>
+                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <a href="#" class="quote-btn">
+                                <div class="icon-box">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <span>Get a Quote</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center card-content-new">
+                        <!-- Product Image -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="product-img-box text-center">
+                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
+                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
+                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
+                                farmers alike.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Material:</strong> High Carbon Steel</li>
+                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
+                                    vibration-free operation</li>
+                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                            </ul>
+                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <a href="#" class="quote-btn">
+                                <div class="icon-box">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <span>Get a Quote</span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY TWO -->
+                <div class="tab-pane fade" id="cat2" role="tabpanel">
+                    <div class="row align-items-center card-content-new mb-5">
+                        <!-- Product Image -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="product-img-box text-center">
+                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
+                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
+                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
+                                farmers alike.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Material:</strong> High Carbon Steel</li>
+                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
+                                    vibration-free operation</li>
+                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                            </ul>
+                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <a href="#" class="quote-btn">
+                                <div class="icon-box">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <span>Get a Quote</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row align-items-center card-content-new mb-5">
+                        <!-- Product Image -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="product-img-box text-center">
+                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
+                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
+                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
+                                farmers alike.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Material:</strong> High Carbon Steel</li>
+                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
+                                    vibration-free operation</li>
+                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                            </ul>
+                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <a href="#" class="quote-btn">
+                                <div class="icon-box">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <span>Get a Quote</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center card-content-new mb-5">
+                        <!-- Product Image -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="product-img-box text-center">
+                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
+                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
+                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
+                                farmers alike.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Material:</strong> High Carbon Steel</li>
+                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
+                                    vibration-free operation</li>
+                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                            </ul>
+                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <a href="#" class="quote-btn">
+                                <div class="icon-box">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <span>Get a Quote</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center card-content-new">
+                        <!-- Product Image -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="product-img-box text-center">
+                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
+                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
+                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
+                                farmers alike.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Material:</strong> High Carbon Steel</li>
+                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
+                                    vibration-free operation</li>
+                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                            </ul>
+                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <a href="#" class="quote-btn">
+                                <div class="icon-box">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <span>Get a Quote</span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY THREE -->
+                <div class="tab-pane fade" id="cat3" role="tabpanel">
+                    <div class="row align-items-center card-content-new mb-5">
+                        <!-- Product Image -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="product-img-box text-center">
+                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
+                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
+                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
+                                farmers alike.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Material:</strong> High Carbon Steel</li>
+                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
+                                    vibration-free operation</li>
+                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                            </ul>
+                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <a href="#" class="quote-btn">
+                                <div class="icon-box">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <span>Get a Quote</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row align-items-center card-content-new mb-5">
+                        <!-- Product Image -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="product-img-box text-center">
+                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
+                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
+                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
+                                farmers alike.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Material:</strong> High Carbon Steel</li>
+                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
+                                    vibration-free operation</li>
+                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                            </ul>
+                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <a href="#" class="quote-btn">
+                                <div class="icon-box">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <span>Get a Quote</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center card-content-new mb-5">
+                        <!-- Product Image -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="product-img-box text-center">
+                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
+                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
+                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
+                                farmers alike.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Material:</strong> High Carbon Steel</li>
+                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
+                                    vibration-free operation</li>
+                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                            </ul>
+                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <a href="#" class="quote-btn">
+                                <div class="icon-box">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <span>Get a Quote</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center card-content-new">
+                        <!-- Product Image -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="product-img-box text-center">
+                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Product Content -->
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
+                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
+                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
+                                farmers alike.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Material:</strong> High Carbon Steel</li>
+                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
+                                    vibration-free operation</li>
+                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                            </ul>
+                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <a href="#" class="quote-btn">
+                                <div class="icon-box">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <span>Get a Quote</span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==============================contact section code here============================ -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+
+                <!-- Left Contact Info -->
+                <div class=" col-xl-8 col-lg-5 col-md-12">
+                    <div class="contact-info">
+                        <h6 class="mb-3">Contact Us</h6>
+                        <h2 class="mb-3">LET’S BUILD A PARTNERSHIP</h2>
+                        <p>We're here to support your growth with quality you can trust.</p>
+
+                        <div class="info-item"><i class="fas fa-map-marker-alt"></i> [Factory/Office Address]</div>
+                        <div class="info-item"><i class="fa-solid fa-phone"></i>+91 118889 83727 | +91 34342 44343</div>
+                        <div class="info-item"><i class="fas fa-envelope"></i> Sales@pujariagro.com</div>
+                        <div class="info-item"><i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>+91 118889
+                            83727</div>
+                    </div>
+                </div>
+
+                <!-- Right Contact Form -->
+                <div class=" col-xl-4 col-lg-7 col-md-12">
+                    <div class="contact-form">
+                        <h3>SEND QUERY</h3>
+                        <p>Here are some frequently asked question by people</p>
+
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="First name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Last name">
+                                </div>
+                            </div>
+                            <input type="email" placeholder="Email">
+                            <input type="tel" placeholder="Phone">
+                            <textarea rows="3" placeholder="Write Message"></textarea>
+
+                            <button type="submit" class="submit-btn">
+                                <span class="icon"><i class="fas fa-arrow-right"></i></span>
+                                <span class="text">SUBMIT</span>
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="container-fluid footer">
+        <div class="row">
+            <!-- Left Section -->
+            <div class="col-lg-6 mb-4 border-end border-secondary">
+                <div class="footer-logo">
+                    <img src="images/Footer-Logo.png" alt="" class="w-25">
+                </div>
+                <p class="footer-text">
+                    In industry, the heartbeat of modern civilization resonates through the relentless pursuit of
+                    progress.
+                </p>
+                <a href="#" class="custom-btn">
+      <span class="icon-part"><i class="fas fa-arrow-right"></i></span>
+      <span class="text-part"> CONNECT</span>
+    </a>
+            </div>
+
+            <!-- Right Section -->
+            <div class="col-lg-6 d-flex justify-content-lg-around justify-content-between flex-wrap">
+                <div class="footer-links mb-4">
+                    <h6>Quick Links</h6>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links mb-4">
+                    <h6>Essential</h6>
+                    <ul>
+                        <li><a href="#">Query</a></li>
+                        <li><a href="#">Distributors</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Vijay Industries</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-contact">
+                +91 118889 83727 | +91 34342 44343 |
+                <a href="mailto:Sales@pujariagro.com">Sales@pujariagro.com</a>
+            </div>
+        </div>
+
+        <div class="footer-credit">
+            Made with <i class="fa fa-heart"></i> by MediaX
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Fontawesome Kit -->
+    <script src="https://kit.fontawesome.com/0db0bdec09.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
