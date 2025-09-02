@@ -174,7 +174,7 @@ body {
 ================================ */
 .hero-text {
   font-weight: 700;
-  font-size: clamp(1.5rem, 4vw, 2.8rem);
+  font-size: clamp(1.5rem, 4vw, 2.7rem);
   line-height: 1.2;
   border-left: 10px solid rgba(200, 22, 22, 1);
   padding-left: 12px;
@@ -196,6 +196,7 @@ body {
   border-radius: 2px;
   font-size: clamp(0.7rem, 2vw, 1rem);
   margin-top: 1rem;
+  font-family: Quicksand, sans-serif;
 }
 
 /* Left part (icon) */
@@ -250,14 +251,15 @@ padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
 .product-title {
   font-size: clamp(1.5rem, 5vw, 3.5rem);
   font-weight: 700;
-  text-align: center;
+  text-align: right;
 }
 
 .product-desc {
-  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
   margin-top: 20px;
   color: #444;
-  text-align: center;
+  text-align: right;
+  font-family: Quicksand, sans-serif;
 }
 
 /* ================================
@@ -509,6 +511,7 @@ padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
   max-width: 750px;
   margin: 0 auto 40px;
   line-height: 1.6;
+  font-family: Quicksand, sans-serif;
 }
 
 /* ================================
@@ -633,6 +636,7 @@ padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
   align-items: center;
   margin-bottom: 1rem;
   font-size: 1.1rem;
+  font-family: Quicksand, sans-serif;
 }
 
 .info-list li i {
@@ -783,9 +787,10 @@ padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
 .section-description {
   max-width: 700px;
   margin: auto;
-  font-size: clamp(0.8rem, 2vw, 0.95rem);
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
   color: #333;
-  line-height: 1.6;
+  line-height: 1.2;
+  font-family: Quicksand, sans-serif;
 }
 
 /* ================================
@@ -979,6 +984,7 @@ padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
   margin-bottom: 30px;
   font-size: 1rem;
   line-height: 1.5;
+  font-family: Quicksand, sans-serif;
 }
 
 /* ==================== FAQ Items ==================== */
@@ -1013,10 +1019,11 @@ padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  font-family: Quicksand, sans-serif;
 }
 
 .faq-question {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1rem;
 }
 
@@ -1472,10 +1479,11 @@ padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
 .our-story p {
   font-size: 15px;
   color: #333;
-  line-height: 1.7;
+  line-height: 1.4;
   max-width: 850px;
   margin: 0 auto 12px;
   padding: 0 5px;
+  font-family: Quicksand, sans-serif;
 }
 
 .story-img img {
@@ -1543,7 +1551,7 @@ padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
   }
 
   .our-story p {
-    font-size: 17.5px !important;
+    font-size: 15px !important;
   }
 }
 
@@ -1648,10 +1656,12 @@ padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
 }
 
 .year-box p {
-  font-size: 13px;
+  font-size: 12px !important;
   color: #333;
   line-height: 1.5;
   visibility: hidden;
+  font-family: Quicksand, sans-serif;
+  text-align: center;
 }
 
 .year-box.active p {
@@ -1723,7 +1733,7 @@ padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
   }
 
   .year-box p {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
@@ -1735,6 +1745,10 @@ padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
 
   .timeline-image img {
     width: 35%;
+  }
+
+  .year-box p {
+    font-size: 13px;
   }
 }
 
@@ -2260,6 +2274,7 @@ padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
   margin: 0 0 6px;
   font-size: 15px;
   color: #444;
+  font-family: Quicksand, sans-serif;
 }
 
 .location-style {
