@@ -41,4 +41,29 @@ yearBoxes.forEach(box => {
   });
 });
 
+// Mobile Menu Animation Handler
+document.addEventListener('DOMContentLoaded', function() {
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+  const navbarToggler = document.querySelector('.navbar-toggler');
+
+  if (navbarCollapse && navbarToggler) {
+    navbarToggler.addEventListener('click', function() {
+      // Small delay to allow Bootstrap's show class to be added/removed
+      setTimeout(function() {
+        if (navbarCollapse.classList.contains('show')) {
+          // Menu is opening - animations are handled by CSS
+        } else {
+          // Menu is closing - reset animations
+          const navItems = navbarCollapse.querySelectorAll('.nav-item');
+          navItems.forEach(item => {
+            item.style.opacity = '';
+            item.style.transform = '';
+            item.style.animationDelay = '';
+          });
+        }
+      }, 10);
+    });
+  }
+});
+
 

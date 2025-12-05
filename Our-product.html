@@ -17,62 +17,86 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Website Icon  -->
+    <link rel="Icon" href="images/favicon.png">
+
+    <!-- Meta Tags -->
+    <meta name="title" content="Pujari | Trusted Chaff Cutter Parts & Agri-Spare Manufacturer Since 1964" />
+    <meta name="description"
+        content="Pujari (Vijay Industries) has been India's trusted name in chaff cutter parts and agri-spares since 1964. With 61+ years of excellence, we manufacture durable, precision-forged agricultural machinery parts backed by in-house production, R&D, and nationwide distribution." />
+    <meta name="keywords"
+        content="Pujari, Vijay Industries, chaff cutter parts, gandasa, agri spare parts, agricultural machinery parts, forged parts, farm equipment parts, agriculture spares manufacturer India" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+
+    <!-- Social Share -->
+    <meta property="og:title" content="Pujari | Trusted Chaff Cutter Parts & Agri-Spare Manufacturer Since 1964" />
+    <meta property="og:description"
+        content="Discover the legacy of Pujari — India's most trusted manufacturer of chaff cutter parts and agri-spares for 61+ years. Built on reliability, engineering excellence, and nationwide trust." />
+    <!-- <meta property="og:url" content="https://mediax.co.in/" /> -->
+    <!-- <meta property="og:image" content="image/logo-share.jpg" /> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pujari" />
 </head>
 
 <body>
     <!--============== Navbar start here===========================-->
     <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#">
-        <img src="images/Logo.png" alt="Logo">
-      </a>
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo-header.png" alt="Logo">
+            </a>
 
-      <!-- Toggler -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <!-- Toggler -->
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <!-- Center Menu -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">
-              <span class="text black">Home</span>
-              <span class="text red">Home</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="About.html">
-              <span class="text black">About Us</span>
-              <span class="text red">About Us</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Our-product.html">
-              <span class="text black">Our Products</span>
-              <span class="text red">Our Products</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">
-              <span class="text black">Contact Us</span>
-              <span class="text red">Contact Us</span>
-            </a>
-          </li>
-        </ul>
+            <!-- Center Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <span class="text black">Home</span>
+                            <span class="text red">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">
+                            <span class="text black">About Us</span>
+                            <span class="text red">About Us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Our-product.html">
+                            <span class="text black">Our Products</span>
+                            <span class="text red">Our Products</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <span class="text black">Contact Us</span>
+                            <span class="text red">Contact Us</span>
+                        </a>
+                    </li>
+                </ul>
 
-        <!-- Phone -->
-        <div class="phone-box d-none d-lg-flex">
-          <div class="phone-icon">
-            <i class="fa-solid fa-phone"></i>
-          </div>
-          <div class="phone-number">+91 91190 06999</div>
+                <!-- Phone -->
+                <div class="phone-box d-none d-lg-flex">
+                    <div class="phone-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="phone-number">+91 95208 26999</div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
     <!-- ==============Navbar end here=====================-->
 
@@ -116,25 +140,89 @@
                     <div class="row align-items-center card-content-new mb-5">
                         <!-- Product Image -->
                         <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="product-img-box text-center">
-                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            <div id="productCarousel1" class="carousel slide" data-bs-ride="carousel">
+
+                                <!-- Dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#productCarousel1" data-bs-slide-to="0"
+                                        class="active"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="3"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="4"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="5"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="6"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="7"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="8"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="9"></button>
+                                </div>
+
+                                <!-- Images -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/IMG 1_0032_1_Halfround_1.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0038_1_Halfround_2.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0037_1_Halfround_3.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0001_1_Halfround_4.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0031_1_Halfround_5.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0003_1_Halfround_6.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0036_1_Halfround_7.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0015_1_Halfround_8.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0030_1_Halfround_9.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0016_1_Halfround_10.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
+
                         <!-- Product Content -->
                         <div class="col-lg-6">
-                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
-                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
-                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
-                                farmers alike.</p>
+                            <h5 class="fw-bold">Half Round Chaff Cutter Gandasa</h5>
+                            <p class="text-muted">The Half Round PUJARI Gandasa is a part you'll install once and then
+                                forget about… because it simply refuses to quit. Made from industry's highest quality
+                                high-carbon steel and built to take whatever your crop throws at it. It delivers smooth,
+                                steady cutting day after day, season after season. No more cracks, no more mid-season
+                                sharpening runs.</p>
+                            <p>Its balanced shape keeps your vibration-free, whether you're running a manual setup or a
+                                full motorised chaff cutter. Strong, steady, and reliable — just the way a Gandasa
+                                should be.</p>
                             <ul class="list-unstyled">
                                 <li><strong>Material:</strong> High Carbon Steel</li>
-                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
-                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Thickness:</strong> 2.5mm - 3mm</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutter machines</li>
                                 <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
                                     vibration-free operation</li>
-                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                                <li><strong>Applications:</strong> Animal feed preparation only</li>
                             </ul>
-                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <p class="fw-bold">Available in bulk | OEM-ready</p>
                             <a href="#" class="quote-btn">
                                 <div class="icon-box">
                                     <i class="fas fa-arrow-right"></i>
@@ -149,25 +237,110 @@
                     <div class="row align-items-center card-content-new mb-5">
                         <!-- Product Image -->
                         <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="product-img-box text-center">
-                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            <div id="productCarousel2" class="carousel slide" data-bs-ride="carousel">
+
+                                <!-- Dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#productCarousel2" data-bs-slide-to="0"
+                                        class="active"></button>
+                                    <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="3"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="4"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="5"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="6"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="7"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="8"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="9"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="10"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="11"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="12"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="13"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="14"></button>
+                                </div>
+
+                                <!-- Images -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/IMG 1_0029_2__straight_rectangle_1.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0028_2__straight_rectangle_2.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0014_2__straight_rectangle_3.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0013_2__straight_rectangle_4.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0027_2__straight_rectangle_5.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0012_2__straight_rectangle_6.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0026_2__straight_rectangle_7.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0025_2__straight_rectangle_8.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0002_2__straight_rectangle_9.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0024_2__straight_rectangle_10.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0011_2__straight_rectangle_11.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0010_2__straight_rectangle_12.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0009_2__straight_rectangle_13.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0008_2__straight_rectangle_14.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                         <!-- Product Content -->
                         <div class="col-lg-6">
-                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
-                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
-                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
-                                farmers alike.</p>
+                            <h5 class="fw-bold">Straight/Rectangle Chaff Cutter Gandasa</h5>
+                            <p class="text-muted">You name the size, we have it. Our Straight/Rectangle PUJARI Gandasa
+                                range comes in a wide selection of lengths and thicknesses—so finding the length and
+                                thickness is never a matter of concern with PUJARI. In fact, most chaff cutter
+                                manufacturers design their machines to fit PUJARI Gandasa right out of the pouch.</p>
+                            <p class="text-muted">You name the size, we have it. Our Straight/Rectangle PUJARI Gandasa
+                                range comes in a wide selection of lengths and thicknesses—so finding the length and
+                                thickness is never a matter of concern with PUJARI. In fact, most chaff cutter
+                                manufacturers design their machines to fit PUJARI Gandasa right out of the pouch.</p>
                             <ul class="list-unstyled">
                                 <li><strong>Material:</strong> High Carbon Steel</li>
-                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
-                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
-                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
-                                    vibration-free operation</li>
-                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                                <li><strong>Lengths:</strong> 11”, 12”, 13”, 14”, 15”, 16”, 17”</li>
+                                <li><strong>Thickness:</strong> 2.3mm, 2.5mm, 3mm, 4mm</li>
+                                <li><strong>Packaging Types:</strong> Blue, Red, Green</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutter machines</li>
+                                <li><strong>Applications:</strong> Animal feed preparation only</li>
                             </ul>
-                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <p class="fw-bold">Available in bulk | OEM-ready</p>
                             <a href="#" class="quote-btn">
                                 <div class="icon-box">
                                     <i class="fas fa-arrow-right"></i>
@@ -178,60 +351,115 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-center card-content-new mb-5">
-                        <!-- Product Image -->
-                        <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="product-img-box text-center">
-                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
-                            </div>
-                        </div>
-                        <!-- Product Content -->
-                        <div class="col-lg-6">
-                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
-                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
-                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
-                                farmers alike.</p>
-                            <ul class="list-unstyled">
-                                <li><strong>Material:</strong> High Carbon Steel</li>
-                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
-                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
-                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
-                                    vibration-free operation</li>
-                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
-                            </ul>
-                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
-                            <a href="#" class="quote-btn">
-                                <div class="icon-box">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
-                                <span>Get a Quote</span>
-                            </a>
 
-                        </div>
-                    </div>
 
                     <div class="row align-items-center card-content-new ">
                         <!-- Product Image -->
                         <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="product-img-box text-center">
-                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
+                            <div id="productCarousel3" class="carousel slide" data-bs-ride="carousel">
+
+                                <!-- Dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#productCarousel3" data-bs-slide-to="0"
+                                        class="active"></button>
+                                    <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="3"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="4"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="5"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="6"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="7"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="8"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="9"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="10"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="11"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="12"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="13"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="14"></button>
+                                </div>
+
+                                <!-- Images -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/IMG 1_0023_3_Heavyduty_1.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0000_3_Heavyduty_2.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0022_3_Heavyduty_3.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0008_3_Heavyduty_4.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0007_3_Heavyduty_5.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0006_3_Heavyduty_6.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0021_3_Heavyduty_7.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0005_3_Heavyduty_10.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0034_3_Heavyduty_11.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0020_3_Heavyduty_12.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0019_3_Heavyduty_13.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0004_3_Heavyduty_14.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0033_3_Heavyduty_15.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0018_3_Heavyduty_16.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0017_3_Heavyduty_17.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                         <!-- Product Content -->
                         <div class="col-lg-6">
-                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
-                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
-                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
-                                farmers alike.</p>
+                            <h5 class="fw-bold">Heavy Duty 6mm / 8mm Chaff Cutter Gandasa</h5>
+                            <p class="text-muted">When the work gets tougher, this Gandasa steps up. Built from
+                                high-carbon steel with a thicker, heavier profile, it's made for demanding cutting
+                                conditions and long hours in the field. Strong, steady, and built to handle whatever
+                                your machine puts it through.</p>
                             <ul class="list-unstyled">
                                 <li><strong>Material:</strong> High Carbon Steel</li>
-                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
-                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
-                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
-                                    vibration-free operation</li>
-                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                                <li><strong>Lengths:</strong> 10”, 11”, 12”, 13”, 14”, 15”, 16”, 17”</li>
+                                <li><strong>Thickness:</strong> 6mm, 8mm</li>
+                                <li><strong>Hole Types:</strong> 2 Hole, 3 Hole, 4 Hole, 5 Hole, Slotted</li>
+                                <li><strong>Packaging Types:</strong> Golden, Orange</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutter machines</li>
+                                <li><strong>Applications:</strong> Animal feed preparation only</li>
                             </ul>
-                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <p class="fw-bold">Available in bulk | OEM-ready le</p>
                             <a href="#" class="quote-btn">
                                 <div class="icon-box">
                                     <i class="fas fa-arrow-right"></i>
@@ -249,122 +477,89 @@
                     <div class="row align-items-center card-content-new mb-5">
                         <!-- Product Image -->
                         <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="product-img-box text-center">
-                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
-                            </div>
-                        </div>
-                        <!-- Product Content -->
-                        <div class="col-lg-6">
-                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
-                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
-                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
-                                farmers alike.</p>
-                            <ul class="list-unstyled">
-                                <li><strong>Material:</strong> High Carbon Steel</li>
-                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
-                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
-                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
-                                    vibration-free operation</li>
-                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
-                            </ul>
-                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
-                            <a href="#" class="quote-btn">
-                                <div class="icon-box">
-                                    <i class="fas fa-arrow-right"></i>
+                            <div id="productCarousel1" class="carousel slide" data-bs-ride="carousel">
+
+                                <!-- Dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#productCarousel1" data-bs-slide-to="0"
+                                        class="active"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="3"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="4"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="5"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="6"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="7"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="8"></button>
+                                    <button type="button" data-bs-target="#productCarousel1"
+                                        data-bs-slide-to="9"></button>
                                 </div>
-                                <span>Get a Quote</span>
-                            </a>
 
-                        </div>
-                    </div>
-
-
-                    <div class="row align-items-center card-content-new mb-5">
-                        <!-- Product Image -->
-                        <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="product-img-box text-center">
-                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
-                            </div>
-                        </div>
-                        <!-- Product Content -->
-                        <div class="col-lg-6">
-                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
-                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
-                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
-                                farmers alike.</p>
-                            <ul class="list-unstyled">
-                                <li><strong>Material:</strong> High Carbon Steel</li>
-                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
-                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
-                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
-                                    vibration-free operation</li>
-                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
-                            </ul>
-                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
-                            <a href="#" class="quote-btn">
-                                <div class="icon-box">
-                                    <i class="fas fa-arrow-right"></i>
+                                <!-- Images -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/IMG 1_0032_1_Halfround_1.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0038_1_Halfround_2.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0037_1_Halfround_3.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0001_1_Halfround_4.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0031_1_Halfround_5.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0003_1_Halfround_6.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0036_1_Halfround_7.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0015_1_Halfround_8.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0030_1_Halfround_9.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0016_1_Halfround_10.jpg" class="d-block w-100" alt="">
+                                    </div>
                                 </div>
-                                <span>Get a Quote</span>
-                            </a>
 
-                        </div>
-                    </div>
-
-                    <div class="row align-items-center card-content-new mb-5">
-                        <!-- Product Image -->
-                        <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="product-img-box text-center">
-                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
                             </div>
                         </div>
+
                         <!-- Product Content -->
                         <div class="col-lg-6">
-                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
-                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
-                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
-                                farmers alike.</p>
+                            <h5 class="fw-bold">Half Round Chaff Cutter Gandasa</h5>
+                            <p class="text-muted">The Half Round PUJARI Gandasa is a part you'll install once and then
+                                forget about… because it simply refuses to quit. Made from industry's highest quality
+                                high-carbon steel and built to take whatever your crop throws at it. It delivers smooth,
+                                steady cutting day after day, season after season. No more cracks, no more mid-season
+                                sharpening runs.</p>
+                            <p>Its balanced shape keeps your vibration-free, whether you're running a manual setup or a
+                                full motorised chaff cutter. Strong, steady, and reliable — just the way a Gandasa
+                                should be.</p>
                             <ul class="list-unstyled">
                                 <li><strong>Material:</strong> High Carbon Steel</li>
-                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
-                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
+                                <li><strong>Thickness:</strong> 2.5mm - 3mm</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutter machines</li>
                                 <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
                                     vibration-free operation</li>
-                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                                <li><strong>Applications:</strong> Animal feed preparation only</li>
                             </ul>
-                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
-                            <a href="#" class="quote-btn">
-                                <div class="icon-box">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
-                                <span>Get a Quote</span>
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <div class="row align-items-center card-content-new">
-                        <!-- Product Image -->
-                        <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="product-img-box text-center">
-                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
-                            </div>
-                        </div>
-                        <!-- Product Content -->
-                        <div class="col-lg-6">
-                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
-                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
-                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
-                                farmers alike.</p>
-                            <ul class="list-unstyled">
-                                <li><strong>Material:</strong> High Carbon Steel</li>
-                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
-                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
-                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
-                                    vibration-free operation</li>
-                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
-                            </ul>
-                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <p class="fw-bold">Available in bulk | OEM-ready</p>
                             <a href="#" class="quote-btn">
                                 <div class="icon-box">
                                     <i class="fas fa-arrow-right"></i>
@@ -381,122 +576,110 @@
                     <div class="row align-items-center card-content-new mb-5">
                         <!-- Product Image -->
                         <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="product-img-box text-center">
-                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
-                            </div>
-                        </div>
-                        <!-- Product Content -->
-                        <div class="col-lg-6">
-                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
-                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
-                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
-                                farmers alike.</p>
-                            <ul class="list-unstyled">
-                                <li><strong>Material:</strong> High Carbon Steel</li>
-                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
-                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
-                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
-                                    vibration-free operation</li>
-                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
-                            </ul>
-                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
-                            <a href="#" class="quote-btn">
-                                <div class="icon-box">
-                                    <i class="fas fa-arrow-right"></i>
+                            <div id="productCarousel2" class="carousel slide" data-bs-ride="carousel">
+
+                                <!-- Dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#productCarousel2" data-bs-slide-to="0"
+                                        class="active"></button>
+                                    <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="3"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="4"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="5"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="6"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="7"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="8"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="9"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="10"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="11"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="12"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="13"></button>
+                                        <button type="button" data-bs-target="#productCarousel2"
+                                        data-bs-slide-to="14"></button>
                                 </div>
-                                <span>Get a Quote</span>
-                            </a>
 
-                        </div>
-                    </div>
-
-
-                    <div class="row align-items-center card-content-new mb-5">
-                        <!-- Product Image -->
-                        <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="product-img-box text-center">
-                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
-                            </div>
-                        </div>
-                        <!-- Product Content -->
-                        <div class="col-lg-6">
-                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
-                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
-                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
-                                farmers alike.</p>
-                            <ul class="list-unstyled">
-                                <li><strong>Material:</strong> High Carbon Steel</li>
-                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
-                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
-                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
-                                    vibration-free operation</li>
-                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
-                            </ul>
-                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
-                            <a href="#" class="quote-btn">
-                                <div class="icon-box">
-                                    <i class="fas fa-arrow-right"></i>
+                                <!-- Images -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/IMG 1_0029_2__straight_rectangle_1.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0028_2__straight_rectangle_2.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0014_2__straight_rectangle_3.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0013_2__straight_rectangle_4.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0027_2__straight_rectangle_5.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0012_2__straight_rectangle_6.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0026_2__straight_rectangle_7.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0025_2__straight_rectangle_8.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0002_2__straight_rectangle_9.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0024_2__straight_rectangle_10.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0011_2__straight_rectangle_11.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0010_2__straight_rectangle_12.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0009_2__straight_rectangle_13.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0008_2__straight_rectangle_14.jpg" class="d-block w-100" alt="">
+                                    </div>
                                 </div>
-                                <span>Get a Quote</span>
-                            </a>
 
-                        </div>
-                    </div>
-
-                    <div class="row align-items-center card-content-new mb-5">
-                        <!-- Product Image -->
-                        <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="product-img-box text-center">
-                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
                             </div>
                         </div>
                         <!-- Product Content -->
                         <div class="col-lg-6">
-                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
-                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
-                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
-                                farmers alike.</p>
+                            <h5 class="fw-bold">Straight/Rectangle Chaff Cutter Gandasa</h5>
+                            <p class="text-muted">You name the size, we have it. Our Straight/Rectangle PUJARI Gandasa
+                                range comes in a wide selection of lengths and thicknesses—so finding the length and
+                                thickness is never a matter of concern with PUJARI. In fact, most chaff cutter
+                                manufacturers design their machines to fit PUJARI Gandasa right out of the pouch.</p>
+                            <p class="text-muted">You name the size, we have it. Our Straight/Rectangle PUJARI Gandasa
+                                range comes in a wide selection of lengths and thicknesses—so finding the length and
+                                thickness is never a matter of concern with PUJARI. In fact, most chaff cutter
+                                manufacturers design their machines to fit PUJARI Gandasa right out of the pouch.</p>
                             <ul class="list-unstyled">
                                 <li><strong>Material:</strong> High Carbon Steel</li>
-                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
-                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
-                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
-                                    vibration-free operation</li>
-                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                                <li><strong>Lengths:</strong> 11”, 12”, 13”, 14”, 15”, 16”, 17”</li>
+                                <li><strong>Thickness:</strong> 2.3mm, 2.5mm, 3mm, 4mm</li>
+                                <li><strong>Packaging Types:</strong> Blue, Red, Green</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutter machines</li>
+                                <li><strong>Applications:</strong> Animal feed preparation only</li>
                             </ul>
-                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
-                            <a href="#" class="quote-btn">
-                                <div class="icon-box">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
-                                <span>Get a Quote</span>
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <div class="row align-items-center card-content-new">
-                        <!-- Product Image -->
-                        <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="product-img-box text-center">
-                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
-                            </div>
-                        </div>
-                        <!-- Product Content -->
-                        <div class="col-lg-6">
-                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
-                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
-                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
-                                farmers alike.</p>
-                            <ul class="list-unstyled">
-                                <li><strong>Material:</strong> High Carbon Steel</li>
-                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
-                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
-                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
-                                    vibration-free operation</li>
-                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
-                            </ul>
-                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <p class="fw-bold">Available in bulk | OEM-ready</p>
                             <a href="#" class="quote-btn">
                                 <div class="icon-box">
                                     <i class="fas fa-arrow-right"></i>
@@ -510,125 +693,113 @@
 
                 <!-- CATEGORY THREE -->
                 <div class="tab-pane fade" id="cat3" role="tabpanel">
-                    <div class="row align-items-center card-content-new mb-5">
+                    <div class="row align-items-center card-content-new ">
                         <!-- Product Image -->
                         <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="product-img-box text-center">
-                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
-                            </div>
-                        </div>
-                        <!-- Product Content -->
-                        <div class="col-lg-6">
-                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
-                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
-                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
-                                farmers alike.</p>
-                            <ul class="list-unstyled">
-                                <li><strong>Material:</strong> High Carbon Steel</li>
-                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
-                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
-                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
-                                    vibration-free operation</li>
-                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
-                            </ul>
-                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
-                            <a href="#" class="quote-btn">
-                                <div class="icon-box">
-                                    <i class="fas fa-arrow-right"></i>
+                            <div id="productCarousel3" class="carousel slide" data-bs-ride="carousel">
+
+                                <!-- Dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#productCarousel3" data-bs-slide-to="0"
+                                        class="active"></button>
+                                    <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="3"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="4"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="5"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="6"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="7"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="8"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="9"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="10"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="11"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="12"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="13"></button>
+                                        <button type="button" data-bs-target="#productCarousel3"
+                                        data-bs-slide-to="14"></button>
                                 </div>
-                                <span>Get a Quote</span>
-                            </a>
 
-                        </div>
-                    </div>
-
-
-                    <div class="row align-items-center card-content-new mb-5">
-                        <!-- Product Image -->
-                        <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="product-img-box text-center">
-                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
-                            </div>
-                        </div>
-                        <!-- Product Content -->
-                        <div class="col-lg-6">
-                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
-                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
-                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
-                                farmers alike.</p>
-                            <ul class="list-unstyled">
-                                <li><strong>Material:</strong> High Carbon Steel</li>
-                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
-                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
-                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
-                                    vibration-free operation</li>
-                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
-                            </ul>
-                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
-                            <a href="#" class="quote-btn">
-                                <div class="icon-box">
-                                    <i class="fas fa-arrow-right"></i>
+                                <!-- Images -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/IMG 1_0023_3_Heavyduty_1.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0000_3_Heavyduty_2.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0022_3_Heavyduty_3.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0008_3_Heavyduty_4.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0007_3_Heavyduty_5.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0006_3_Heavyduty_6.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0021_3_Heavyduty_7.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0005_3_Heavyduty_10.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0034_3_Heavyduty_11.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0020_3_Heavyduty_12.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0019_3_Heavyduty_13.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0004_3_Heavyduty_14.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0033_3_Heavyduty_15.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0018_3_Heavyduty_16.jpg" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/IMG 1_0017_3_Heavyduty_17.jpg" class="d-block w-100" alt="">
+                                    </div>
                                 </div>
-                                <span>Get a Quote</span>
-                            </a>
 
-                        </div>
-                    </div>
-
-                    <div class="row align-items-center card-content-new mb-5">
-                        <!-- Product Image -->
-                        <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="product-img-box text-center">
-                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
                             </div>
                         </div>
                         <!-- Product Content -->
                         <div class="col-lg-6">
-                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
-                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
-                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
-                                farmers alike.</p>
+                            <h5 class="fw-bold">Heavy Duty 6mm / 8mm Chaff Cutter Gandasa</h5>
+                            <p class="text-muted">When the work gets tougher, this Gandasa steps up. Built from
+                                high-carbon steel with a thicker, heavier profile, it's made for demanding cutting
+                                conditions and long hours in the field. Strong, steady, and built to handle whatever
+                                your machine puts it through.</p>
                             <ul class="list-unstyled">
                                 <li><strong>Material:</strong> High Carbon Steel</li>
-                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
-                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
-                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
-                                    vibration-free operation</li>
-                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
+                                <li><strong>Lengths:</strong> 10”, 11”, 12”, 13”, 14”, 15”, 16”, 17”</li>
+                                <li><strong>Thickness:</strong> 6mm, 8mm</li>
+                                <li><strong>Hole Types:</strong> 2 Hole, 3 Hole, 4 Hole, 5 Hole, Slotted</li>
+                                <li><strong>Packaging Types:</strong> Golden, Orange</li>
+                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutter machines</li>
+                                <li><strong>Applications:</strong> Animal feed preparation only</li>
                             </ul>
-                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
-                            <a href="#" class="quote-btn">
-                                <div class="icon-box">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
-                                <span>Get a Quote</span>
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <div class="row align-items-center card-content-new">
-                        <!-- Product Image -->
-                        <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="product-img-box text-center">
-                                <img src="images/product.png" alt="Chaff Cutter Blade" class="img-fluid">
-                            </div>
-                        </div>
-                        <!-- Product Content -->
-                        <div class="col-lg-6">
-                            <h5 class="fw-bold">Heavy-Duty Chaff Cutter Blade</h5>
-                            <p class="text-muted">Engineered for endurance. Forged for performance.</p>
-                            <p>Precision-hardened for consistent cuts and long-lasting strength, trusted by OEMs and
-                                farmers alike.</p>
-                            <ul class="list-unstyled">
-                                <li><strong>Material:</strong> High Carbon Steel</li>
-                                <li><strong>Thickness:</strong> 3mm – 5mm (customisable)</li>
-                                <li><strong>Compatibility:</strong> Manual & motorised chaff cutters</li>
-                                <li><strong>Features:</strong> Rust-resistant coating, sharp edges, balanced for
-                                    vibration-free operation</li>
-                                <li><strong>Applications:</strong> Animal feed preparation, crop residue processing</li>
-                            </ul>
-                            <p class="fw-bold">Available in bulk | OEM-ready | Custom stamping available</p>
+                            <p class="fw-bold">Available in bulk | OEM-ready le</p>
                             <a href="#" class="quote-btn">
                                 <div class="icon-box">
                                     <i class="fas fa-arrow-right"></i>
@@ -644,32 +815,55 @@
     </section>
 
 
-    <!-- ==============================contact section code here============================ -->
+    <!-- contact section -->
     <section class="contact-section">
         <div class="container">
             <div class="row g-4 align-items-center">
 
                 <!-- Left Contact Info -->
-                <div class=" col-xl-8 col-lg-5 col-md-12">
+                <div class="col-lg-4 col-md-12">
                     <div class="contact-info">
                         <h6 class="mb-3">Contact Us</h6>
-                        <h2 class="mb-3">LET’S BUILD A PARTNERSHIP</h2>
+                        <h2 class="mb-3">LET'S BUILD A PARTNERSHIP</h2>
                         <p>We're here to support your growth with quality you can trust.</p>
 
-                        <div class="info-item"><i class="fas fa-map-marker-alt"></i> [Factory/Office Address]</div>
-                        <div class="info-item"><i class="fa-solid fa-phone"></i>+91 118889 83727 | +91 34342 44343</div>
-                        <div class="info-item"><i class="fas fa-envelope"></i> Sales@pujariagro.com</div>
-                        <div class="info-item"><i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>+91 118889
-                            83727</div>
+                        <div class="info-item"><i class="fas fa-map-marker-alt"></i>Factory & Corporate Office<br>
+                            UNIT 1: KH. NO. 648, Hathras Road, Agra - 282004<br>
+                            UNIT 2: B-25 Foundry Nagar, Agra - 282004
+                        </div>
+                        <div class="info-item"><i class="fa-solid fa-phone"></i> +91 63972 77956 | +91 95208 26999</div>
+                        <div class="info-item"><i class="fas fa-envelope"></i> sales@pujariagro.com |
+                            info@pujariagro.com</div>
+                        <div class="info-item"><i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i> +91 63972
+                            77956</div>
                     </div>
                 </div>
 
                 <!-- Right Contact Form -->
-                <div class=" col-xl-4 col-lg-7 col-md-12">
+                <div class="col-lg-8 col-md-12">
                     <div class="contact-form">
                         <h3>SEND QUERY</h3>
                         <p>Here are some frequently asked question by people</p>
 
+                        <!-- <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" placeholder="First name">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" placeholder="Last name">
+                </div>
+              </div>
+              <input type="email" placeholder="Email">
+              <input type="tel" placeholder="Phone">
+              <textarea rows="3" placeholder="Write Message"></textarea>
+
+              <button type="submit" class="submit-btn">
+                <span class="icon"><i class="fas fa-arrow-right"></i></span>
+                <span class="text">SUBMIT</span>
+              </button>
+
+            </form> -->
                         <form>
                             <div class="row g-3">
                                 <div class="col-md-6">
@@ -679,16 +873,95 @@
                                     <input type="text" placeholder="Last name">
                                 </div>
                             </div>
+
                             <input type="email" placeholder="Email">
                             <input type="tel" placeholder="Phone">
+
+                            <!-- DROPDOWN: STATE -->
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <select>
+                                        <option value="" disabled selected>Select State</option>
+                                        <option>Andhra Pradesh</option>
+                                        <option>Arunachal Pradesh</option>
+                                        <option>Assam</option>
+                                        <option>Bihar</option>
+                                        <option>Chhattisgarh</option>
+                                        <option>Goa</option>
+                                        <option>Gujarat</option>
+                                        <option>Haryana</option>
+                                        <option>Himachal Pradesh</option>
+                                        <option>Jharkhand</option>
+                                        <option>Karnataka</option>
+                                        <option>Kerala</option>
+                                        <option>Madhya Pradesh</option>
+                                        <option>Maharashtra</option>
+                                        <option>Manipur</option>
+                                        <option>Meghalaya</option>
+                                        <option>Mizoram</option>
+                                        <option>Nagaland</option>
+                                        <option>Odisha</option>
+                                        <option>Punjab</option>
+                                        <option>Rajasthan</option>
+                                        <option>Sikkim</option>
+                                        <option>Tamil Nadu</option>
+                                        <option>Telangana</option>
+                                        <option>Tripura</option>
+                                        <option>Uttar Pradesh</option>
+                                        <option>Uttarakhand</option>
+                                        <option>West Bengal</option>
+                                        <option>Delhi</option>
+                                        <option>Jammu & Kashmir</option>
+                                        <option>Ladakh</option>
+                                    </select>
+                                </div>
+
+                                <!-- DROPDOWN: NATURE OF INQUIRY -->
+                                <div class="col-md-6">
+                                    <select>
+                                        <option value="" disabled selected>Nature of Inquiry</option>
+                                        <option>OEM</option>
+                                        <option>Distributorship</option>
+                                        <option>Bulk Purchase</option>
+                                        <option>General Inquiry</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- DROPDOWN: QUANTITY + PRODUCT -->
+                            <div class="row g-3 mt-1">
+                                <div class="col-md-6">
+                                    <select>
+                                        <option value="" disabled selected>Annual Quantity Requirement (No. of Boxes)
+                                        </option>
+                                        <option>10–50</option>
+                                        <option>50–100</option>
+                                        <option>100–250</option>
+                                        <option>250–500</option>
+                                        <option>500+</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <select>
+                                        <option value="" disabled selected>Product of Interest</option>
+                                        <option>Half Round Gandasa</option>
+                                        <option>Straight/Rectangle Gandasa (Blue, Red, Green)</option>
+                                        <option>Heavy Duty 6mm/8mm Gandasa</option>
+                                        <option>Custom/Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
                             <textarea rows="3" placeholder="Write Message"></textarea>
 
                             <button type="submit" class="submit-btn">
                                 <span class="icon"><i class="fas fa-arrow-right"></i></span>
                                 <span class="text">SUBMIT</span>
                             </button>
-
                         </form>
+
+
                     </div>
                 </div>
 
@@ -703,16 +976,16 @@
             <!-- Left Section -->
             <div class="col-lg-6 mb-4 border-end border-secondary">
                 <div class="footer-logo">
-                    <img src="images/Footer-Logo.png" alt="" class="w-25">
+                    <a href="index.html"><img src="images/logo-footer.png" alt="" class="w-25"></a>
                 </div>
                 <p class="footer-text">
                     In industry, the heartbeat of modern civilization resonates through the relentless pursuit of
                     progress.
                 </p>
-                <a href="#" class="custom-btn">
-      <span class="icon-part"><i class="fas fa-arrow-right"></i></span>
-      <span class="text-part"> CONNECT</span>
-    </a>
+                <a href="contact.html" class="custom-btn">
+                    <span class="icon-part"><i class="fas fa-arrow-right"></i></span>
+                    <span class="text-part">Connect</span>
+                </a>
             </div>
 
             <!-- Right Section -->
@@ -742,18 +1015,20 @@
         <!-- Bottom -->
         <div class="footer-bottom">
             <div class="footer-social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href=" https://www.linkedin.com/company/vijay-industries" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.youtube.com/@pujariagro" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <div class="footer-contact">
-                +91 118889 83727 | +91 34342 44343 |
-                <a href="mailto:Sales@pujariagro.com">Sales@pujariagro.com</a>
+                <a href="tel:+916397277956" target="_blank">+91 63972 77956</a> |
+                <a href="tel:+919520826999" target="_blank">+91 95208 26999</a> |
+                <a href="mailto:Sales@pujariagro.com" target="_blank">Sales@pujariagro.com</a>
             </div>
+
         </div>
 
         <div class="footer-credit">
-            Made with <i class="fa fa-heart"></i> by MediaX
+            <a href="https://mediax.co.in/" class="text-decoration-none" target="_blank"> Site by Mediax</a>
         </div>
     </footer>
 
