@@ -72,11 +72,11 @@ body {
 }
 
 .nav-link:hover .black {
-  transform: translateY(-100%);
+  transform: translateY(-100%) !important;
 }
 
 .nav-link:hover .red {
-  transform: translateY(0);
+  transform: translateY(0) !important;
 }
 
 /* ==========================
@@ -110,11 +110,11 @@ body {
 }
 
 .phone-box:hover {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
 }
 
 .phone-box:hover .phone-number {
-  color: #fff;
+  color: #fff !important;
 }
 
 /* ==========================
@@ -317,8 +317,8 @@ body {
 
 /* Left part (icon) */
 .custom-btn .icon-part {
-  background: rgba(200, 22, 22, 1);
-  color: #fff;
+  background: rgba(200, 22, 22, 1) !important;
+  color: #fff !important;
   padding: clamp(0.5rem, 2.5vw, 1.1rem) clamp(0.8rem, 2vw, 1rem) !important;
   display: flex;
   align-items: center;
@@ -327,25 +327,25 @@ body {
 
 /* Right part (text) */
 .custom-btn .text-part {
-  padding: clamp(0.5rem, 1vw, 0.8rem) clamp(0.9rem, 2vw, 1.2rem);
-  color: #000;
-  background: #fff;
+  padding: clamp(0.5rem, 1vw, 0.85rem) clamp(0.9rem, 2vw, 1.2rem) !important;
+  color: #000 !important;
+  background: #fff !important;
   white-space: nowrap;
 }
 
 /* Hover effect */
 .custom-btn:hover {
-  background: rgba(200, 22, 22, 1);
+  background: rgba(200, 22, 22, 1) !important;
   color: #fff !important;
 }
 
 .custom-btn:hover .text-part {
-  color: #fff;
-  background: rgba(200, 22, 22, 1);
+  color: #fff !important;
+  background: rgba(200, 22, 22, 1) !important;
 }
 
 .custom-btn:hover .icon-part {
-  background: #000;
+  background: rgba(200, 22, 22, 1) !important;
 }
 
 /* ================================
@@ -681,17 +681,17 @@ body {
 
 /* Hover effect */
 .custom-btn:hover {
-  background: rgba(200, 22, 22, 1);
+  background: rgba(200, 22, 22, 1) !important;
   color: #fff !important;
 }
 
 .custom-btn:hover .text-part {
-  color: #fff;
-  background: rgba(200, 22, 22, 1);
+  color: #fff !important;
+  background: rgba(200, 22, 22, 1) !important;
 }
 
 .custom-btn:hover .icon-part {
-  background: #000;
+ background: rgba(200, 22, 22, 1) !important;
 }
 
 @media (max-width: 576px) {
@@ -810,17 +810,17 @@ body {
 }
 
 .custom-btn:hover {
-  background: rgba(200, 22, 22, 1);
+  background: rgba(200, 22, 22, 1) !important;
   color: #fff !important;
 }
 
 .custom-btn:hover .text-part {
-  color: #fff;
-  background: rgba(200, 22, 22, 1);
+  color: #fff !important;
+  background: rgba(200, 22, 22, 1) !important;
 }
 
 .custom-btn:hover .icon-part {
-  background: #000;
+  background: rgba(200, 22, 22, 1) !important;
 }
 
 /* ==============================
@@ -951,7 +951,7 @@ body {
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) !important;
 }
 
 .product-card img {
@@ -1020,17 +1020,17 @@ body {
 
 /* Hover effect */
 .custom-btn:hover {
-  background: rgba(200, 22, 22, 1);
+  background: rgba(200, 22, 22, 1)!important;
   color: #fff !important;
 }
 
 .custom-btn:hover .text-part {
-  color: #fff;
-  background: rgba(200, 22, 22, 1);
+  color: #fff !important;
+  background: rgba(200, 22, 22, 1) !important;
 }
 
 .custom-btn:hover .icon-part {
-  background: #000;
+ background: rgba(200, 22, 22, 1) !important;
 }
 
 /* ================================
@@ -1554,17 +1554,17 @@ body {
 
 /* Hover effect */
 .custom-btn:hover {
-  background: rgba(200, 22, 22, 1);
+  background: rgba(200, 22, 22, 1)!important;
   color: #fff !important;
 }
 
 .custom-btn:hover .text-part {
-  color: #fff;
-  background: rgba(200, 22, 22, 1);
+  color: #fff !important;
+  background: rgba(200, 22, 22, 1) !important;
 }
 
 .custom-btn:hover .icon-part {
-  background: #000;
+ background: rgba(200, 22, 22, 1) !important;
 }
 
 .footer-links h6 {
@@ -1589,7 +1589,7 @@ body {
 }
 
 .footer-links ul li a:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 .footer-bottom {
@@ -1612,7 +1612,7 @@ body {
 }
 
 .footer-social a:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 .footer-contact {
@@ -2174,7 +2174,7 @@ body {
 }
 
 .our-collection .btn-danger:hover {
-  background: #c00;
+  background: #c00 !important;
 }
 
 /* Smooth Fade Animation for Tabs */
@@ -2217,13 +2217,13 @@ body {
 .quote-btn:hover .icon-box {
   background: #d00 !important;
   color: #ffffff !important;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out !important;
 }
 
 .quote-btn:hover span {
   background: #d00 !important;
   color: #fff !important;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out !important;
 }
 
 .carousel-inner img {
