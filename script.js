@@ -64,6 +64,9 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 10);
     });
   }
+
+  // Initialize AOS
+  AOS.init();
 });
 
 
