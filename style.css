@@ -1500,11 +1500,9 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-
-.border-end {
-  border-right: 1px solid #5F5F5F !important;
+.footer .footer-main {
+  border-right:1px solid white !important;
 }
-
 
 .footer-logo {
   font-size: 32px;
@@ -1650,6 +1648,10 @@ body {
   .footer-logo a img {
     width: 55% !important;
   }
+  .footer .footer-main {
+  border-bottom:1px solid white !important;
+  border-right:none !important;
+}
 }
 
 /* About page our story section here */
