@@ -9,6 +9,15 @@
 
 }
 
+#faq-section {
+    scroll-margin-top: 100px; /* adjust to header height */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
   font-family: "Oswald", sans-serif !important;
 }
@@ -113,7 +122,7 @@ body {
   background-color: var(--primary-color) !important;
 }
 
-.phone-box:hover .phone-number {
+.phone-box:hover .phone-number a {
   color: #fff !important;
 }
 
@@ -1208,12 +1217,16 @@ body {
 @media (max-width: 576px) {
   .faq-title {
     font-size: 1.5rem;
-    text-align: left;
+    text-align: center;
+  }
+  .faq-subtitle {
+    font-size: 0.9rem;
+    text-align: center;
   }
 
   .faq-description {
     font-size: 0.9rem;
-    text-align: left;
+    text-align: center;
   }
 
   .faq-item {
@@ -1482,8 +1495,18 @@ body {
     padding: 50px 0 50px 0 !important;
   }
 
+  .contact-section h6{
+    text-align: center;
+  }
+  .contact-section h2{
+    text-align: center;
+  }
+
   .contact-form {
     position: static;
+  }
+  .contact-form h3{
+    font-size:15px;
   }
 
 
@@ -1703,6 +1726,11 @@ body {
     font-size: 24px !important;
   }
 
+  .our-story h6{
+    font-size: 15px !important;
+    text-align :center !important;
+  }
+
   .our-story {
     text-align: left !important;
   }
@@ -1881,7 +1909,7 @@ body {
 
   .timeline-section h6 {
     font-size: 14px;
-    text-align: left;
+    text-align: center;
   }
 
   .timeline-image img {
@@ -1996,6 +2024,11 @@ body {
   .parent-company h2 {
     font-size: 26px;
     margin-bottom: 10px;
+  }
+
+  .parent-company h6{
+    font-size: 15px;
+    text-align: center !important;
   }
 
   .parent-company p {
@@ -2254,6 +2287,16 @@ body {
 
 .carousel-indicators .active {
   background-color: #000000 !important;
+}
+
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+    background-color: black;
+    border-radius: 50%;
 }
 
 
